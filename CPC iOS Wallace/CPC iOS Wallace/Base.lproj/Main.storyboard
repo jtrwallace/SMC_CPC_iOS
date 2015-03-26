@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-2b-m1S">
+                                <rect key="frame" x="211" y="171" width="179" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search by Professor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY9-Tr-OCj">
+                                <rect key="frame" x="229" y="238" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search by Class"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grade Distribution Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="UeR-Oz-llm">
+                                <rect key="frame" x="180" y="60" width="240" height="79"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="EUc-Jq-8BH"/>
+                                    <constraint firstAttribute="height" constant="79" id="kcA-fk-dw0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zY9-Tr-OCj" secondAttribute="bottom" constant="326" id="0Gi-1L-y42"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zzt-2b-m1S" secondAttribute="bottom" constant="407" id="Fwu-oB-oXm"/>
+                            <constraint firstItem="zzt-2b-m1S" firstAttribute="top" secondItem="UeR-Oz-llm" secondAttribute="bottom" constant="38" id="ISM-C1-uUe"/>
+                            <constraint firstAttribute="centerX" secondItem="UeR-Oz-llm" secondAttribute="centerX" id="Um2-75-KwJ"/>
+                            <constraint firstItem="zY9-Tr-OCj" firstAttribute="top" secondItem="zzt-2b-m1S" secondAttribute="bottom" constant="51" id="XPK-1P-zKz"/>
+                            <constraint firstAttribute="centerX" secondItem="zzt-2b-m1S" secondAttribute="centerX" id="ZTh-Ij-7rq"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UeR-Oz-llm" secondAttribute="bottom" constant="432" id="aR8-Fv-UJf"/>
+                            <constraint firstItem="zY9-Tr-OCj" firstAttribute="top" secondItem="zzt-2b-m1S" secondAttribute="bottom" constant="51" id="byI-w3-Czl"/>
+                            <constraint firstItem="zzt-2b-m1S" firstAttribute="top" secondItem="UeR-Oz-llm" secondAttribute="bottom" constant="32" id="cjn-Ga-1Q8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UeR-Oz-llm" secondAttribute="trailing" constant="164" id="dbb-bE-HNR"/>
+                            <constraint firstAttribute="centerX" secondItem="zY9-Tr-OCj" secondAttribute="centerX" id="jaB-5o-Y0v"/>
+                            <constraint firstItem="UeR-Oz-llm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="lUL-gT-mSn"/>
+                            <constraint firstItem="UeR-Oz-llm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="164" id="yqC-jS-9hc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ISM-C1-uUe"/>
+                                <exclude reference="Fwu-oB-oXm"/>
+                                <exclude reference="aR8-Fv-UJf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Grade Distribution Logo.png" width="4352" height="1376"/>
+    </resources>
+</document>
