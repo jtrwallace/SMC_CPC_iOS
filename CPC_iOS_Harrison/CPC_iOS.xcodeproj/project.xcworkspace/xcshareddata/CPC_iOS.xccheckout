@@ -14,7 +14,7 @@
 		<string>https://github.com/jtrwallace/SMC_CPC_iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CPC_iOS/CPC_iOS.xcodeproj</string>
+	<string>CPC_iOS_Harrison/CPC_iOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</key>
