@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CPC iOS Wallace.xcscheme</key>
+		<key>SMC App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>42BFB2871AC393270039AA2C</key>
+		<key>C0E0BA6C1AD3503D008042CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42BFB2A01AC393270039AA2C</key>
+		<key>C0E0BA811AD3503D008042CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

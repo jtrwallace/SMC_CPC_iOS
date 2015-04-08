@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42BFB2871AC393270039AA2C"
-               BuildableName = "CPC iOS Wallace.app"
-               BlueprintName = "CPC iOS Wallace"
-               ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+               BlueprintIdentifier = "C0E0BA6C1AD3503D008042CD"
+               BuildableName = "SMC App.app"
+               BlueprintName = "SMC App"
+               ReferencedContainer = "container:SMC App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42BFB2A01AC393270039AA2C"
-               BuildableName = "CPC iOS WallaceTests.xctest"
-               BlueprintName = "CPC iOS WallaceTests"
-               ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+               BlueprintIdentifier = "C0E0BA811AD3503D008042CD"
+               BuildableName = "SMC AppTests.xctest"
+               BlueprintName = "SMC AppTests"
+               ReferencedContainer = "container:SMC App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42BFB2A01AC393270039AA2C"
-               BuildableName = "CPC iOS WallaceTests.xctest"
-               BlueprintName = "CPC iOS WallaceTests"
-               ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+               BlueprintIdentifier = "C0E0BA811AD3503D008042CD"
+               BuildableName = "SMC AppTests.xctest"
+               BlueprintName = "SMC AppTests"
+               ReferencedContainer = "container:SMC App.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42BFB2871AC393270039AA2C"
-            BuildableName = "CPC iOS Wallace.app"
-            BlueprintName = "CPC iOS Wallace"
-            ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+            BlueprintIdentifier = "C0E0BA6C1AD3503D008042CD"
+            BuildableName = "SMC App.app"
+            BlueprintName = "SMC App"
+            ReferencedContainer = "container:SMC App.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42BFB2871AC393270039AA2C"
-            BuildableName = "CPC iOS Wallace.app"
-            BlueprintName = "CPC iOS Wallace"
-            ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+            BlueprintIdentifier = "C0E0BA6C1AD3503D008042CD"
+            BuildableName = "SMC App.app"
+            BlueprintName = "SMC App"
+            ReferencedContainer = "container:SMC App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42BFB2871AC393270039AA2C"
-            BuildableName = "CPC iOS Wallace.app"
-            BlueprintName = "CPC iOS Wallace"
-            ReferencedContainer = "container:CPC iOS Wallace.xcodeproj">
+            BlueprintIdentifier = "C0E0BA6C1AD3503D008042CD"
+            BuildableName = "SMC App.app"
+            BlueprintName = "SMC App"
+            ReferencedContainer = "container:SMC App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
