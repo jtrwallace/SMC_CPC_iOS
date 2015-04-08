@@ -98,6 +98,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrH-kc-Xnk">
                                                 <rect key="frame" x="0.0" y="83" width="600" height="155"/>
                                                 <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="divider_semesterPicker_vertical155.png" translatesAutoresizingMaskIntoConstraints="NO" id="mau-2T-YV8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="155" id="PhP-bD-o6l"/>
+                                                        </constraints>
+                                                    </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-IB-Rwq">
                                                         <rect key="frame" x="8" y="9" width="65" height="21"/>
                                                         <constraints>
@@ -167,12 +173,15 @@
                                                         </constraints>
                                                     </switch>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.90356691919191923" green="0.90356691919191923" blue="0.90356691919191923" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.96614583333333337" green="0.96614583333333337" blue="0.96614583333333337" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="fI7-0r-18x" firstAttribute="top" secondItem="M83-7z-w2l" secondAttribute="bottom" constant="8" id="0OK-ET-0ap"/>
                                                     <constraint firstItem="Fgl-73-Xt9" firstAttribute="top" secondItem="fI7-0r-18x" secondAttribute="bottom" constant="8" id="1tg-tI-Gs8"/>
+                                                    <constraint firstItem="mau-2T-YV8" firstAttribute="leading" secondItem="KrH-kc-Xnk" secondAttribute="leading" id="2sd-t9-3A4"/>
+                                                    <constraint firstAttribute="centerY" secondItem="mau-2T-YV8" secondAttribute="centerY" id="AhQ-Ol-Udr"/>
                                                     <constraint firstItem="Fgl-73-Xt9" firstAttribute="trailing" secondItem="1sg-S6-WiF" secondAttribute="trailing" id="Dg0-M9-5xb"/>
                                                     <constraint firstItem="Rnn-rQ-YCw" firstAttribute="leading" secondItem="Dbu-I1-mZg" secondAttribute="leading" id="Dm8-9Z-rSa"/>
+                                                    <constraint firstItem="mau-2T-YV8" firstAttribute="top" secondItem="KrH-kc-Xnk" secondAttribute="top" id="GJb-ik-izX"/>
                                                     <constraint firstItem="lXn-IB-Rwq" firstAttribute="centerY" secondItem="1sg-S6-WiF" secondAttribute="centerY" id="KmJ-Dg-MlQ"/>
                                                     <constraint firstItem="Rnn-rQ-YCw" firstAttribute="top" secondItem="kOD-jZ-Pzk" secondAttribute="bottom" constant="18" id="Vma-XG-PDW"/>
                                                     <constraint firstItem="Rnn-rQ-YCw" firstAttribute="leading" secondItem="kOD-jZ-Pzk" secondAttribute="leading" id="W69-Cc-Vwc"/>
@@ -181,10 +190,21 @@
                                                     <constraint firstAttribute="height" constant="155" id="e0Z-RW-D0d"/>
                                                     <constraint firstItem="M83-7z-w2l" firstAttribute="top" secondItem="1sg-S6-WiF" secondAttribute="bottom" constant="8" id="eUz-N0-ngZ"/>
                                                     <constraint firstItem="Fgl-73-Xt9" firstAttribute="trailing" secondItem="fI7-0r-18x" secondAttribute="trailing" id="iAS-GW-8JW"/>
+                                                    <constraint firstItem="mau-2T-YV8" firstAttribute="width" secondItem="KrH-kc-Xnk" secondAttribute="width" id="iJW-Qi-h2V"/>
+                                                    <constraint firstAttribute="centerX" secondItem="mau-2T-YV8" secondAttribute="centerX" constant="7" id="neG-s1-2lk"/>
                                                     <constraint firstItem="Dbu-I1-mZg" firstAttribute="top" secondItem="lXn-IB-Rwq" secondAttribute="bottom" constant="18" id="nph-4p-z2t"/>
                                                     <constraint firstItem="1sg-S6-WiF" firstAttribute="top" secondItem="KrH-kc-Xnk" secondAttribute="top" constant="4" id="oPW-QQ-WU5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mau-2T-YV8" secondAttribute="trailing" id="ofZ-D2-ZDD"/>
                                                     <constraint firstItem="kOD-jZ-Pzk" firstAttribute="top" secondItem="Dbu-I1-mZg" secondAttribute="bottom" constant="18" id="rRy-g9-HEB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mau-2T-YV8" secondAttribute="bottom" id="uaF-oB-2jz"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="AhQ-Ol-Udr"/>
+                                                        <exclude reference="iJW-Qi-h2V"/>
+                                                        <exclude reference="neG-s1-2lk"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a class" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-FO-At5">
                                                 <rect key="frame" x="8" y="45" width="584" height="30"/>
@@ -486,8 +506,14 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philosophy 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XA-3b-smv">
+                                <rect key="frame" x="250" y="33" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juc-hr-ip7">
-                                <rect key="frame" x="16" y="29" width="30" height="30"/>
+                                <rect key="frame" x="219" y="29" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="APG-pr-9rj"/>
                                     <constraint firstAttribute="width" constant="30" id="KFP-6M-Kzu"/>
@@ -507,16 +533,11 @@
                                     <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="crossDissolve" id="pHV-Km-da6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philosophy 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XA-3b-smv">
-                                <rect key="frame" x="250" y="33" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3XA-3b-smv" firstAttribute="top" secondItem="Scr-iI-7zx" secondAttribute="bottom" constant="13" id="45v-hi-2au"/>
+                            <constraint firstItem="3XA-3b-smv" firstAttribute="leading" secondItem="juc-hr-ip7" secondAttribute="trailing" constant="1" id="8iz-Pn-D4B"/>
                             <constraint firstAttribute="centerX" secondItem="mDo-Dr-g3N" secondAttribute="centerX" id="9Hh-XC-QpB"/>
                             <constraint firstItem="juc-hr-ip7" firstAttribute="leading" secondItem="mBX-AK-nVD" secondAttribute="leadingMargin" id="Bl6-Xx-1N2"/>
                             <constraint firstItem="klo-B9-mhc" firstAttribute="top" secondItem="P0O-5q-0ui" secondAttribute="bottom" id="DHs-3A-0P6"/>
@@ -535,10 +556,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Bl6-Xx-1N2"/>
-                                <exclude reference="llC-Sq-Gtl"/>
                                 <exclude reference="KCG-Xb-ozH"/>
                                 <exclude reference="HmS-BL-uJp"/>
+                                <exclude reference="Bl6-Xx-1N2"/>
+                                <exclude reference="J85-gb-Uts"/>
+                                <exclude reference="llC-Sq-Gtl"/>
                             </mask>
                         </variation>
                     </view>
@@ -552,6 +574,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="divider_semesterPicker_vertical155.png" width="124" height="155"/>
         <image name="divider_shadowedBottom.png" width="124" height="14"/>
         <image name="logo_gradeDistribution.png" width="1000" height="74"/>
     </resources>

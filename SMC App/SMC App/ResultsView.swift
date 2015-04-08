@@ -11,7 +11,7 @@ import UIKit
 class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var resultsTable: UITableView!
-    let tableTestData = ["Proffesosorror Uno", "Guy Number 2", "Listed for 3", "Falls for 4", "Craps out 5"]
+    let tableTestData = ["Man, Super", "Cable Guy", "Beyonce", "Dog Whisperer", "Bojangles", "Chapstick", "Monopoly Man", "Turnt Up", "This is all tabel test data", "Need actual data", "Need to figure out SQL server", "Much list. Names many."]
     let textCellIdentifier = "ResultCell"
     
     override func viewDidLoad() {
@@ -39,14 +39,37 @@ class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        //let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as TapCell1
         let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-        
-        //cell.titleLabel.text = "\(ListArray.objectAtIndex(indexPath.item))"
         let row = indexPath.row
-
+        
         cell.textLabel?.text = tableTestData[row]
+
+        var imageName = ""
+        
+               if row <= tableTestData.count/3 { // need this to implement various colored dots to each professor name
+            imageName = "ratingDot_high.png"
+        } else if row <= tableTestData.count*2/3 {
+            imageName = "ratingDot_medium.png"
+        } else if row <= tableTestData.count{
+            imageName = "ratingDot_low.png"
+        }
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+            imageView.frame = CGRect(x: 0, y: 15, width: 14, height: 14)
+        
+        cell.contentView.addSubview(imageView)
+        
+        imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //constraints programmatically set for dot
+        var constX = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: cell.contentView, attribute: NSLayoutAttribute.TrailingMargin, multiplier: 1, constant: -10)
+        cell.addConstraint(constX)
+        var constY = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: cell.contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0)
+        cell.addConstraint(constY)
+        var constW = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 14)
+        cell.contentView.addConstraint(constW)
+        var constH = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 14)
+        cell.addConstraint(constH)
+        
         
         return cell
     }

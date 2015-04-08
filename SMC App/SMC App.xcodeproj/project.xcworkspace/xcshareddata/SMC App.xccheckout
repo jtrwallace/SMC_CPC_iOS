@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B0153EB-5D0A-43A5-A518-81696876E4D5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SMC App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</key>
+		<string>https://github.com/jtrwallace/SMC_CPC_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SMC App/SMC App.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jtrwallace/SMC_CPC_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SMC_CPC_iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

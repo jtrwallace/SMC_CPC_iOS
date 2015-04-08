@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C0A2EA191AD4BC8F00FD5012 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2EA181AD4BC8F00FD5012 /* ResultsView.swift */; };
 		C0A2EA1D1AD4C2C400FD5012 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2EA1C1AD4C2C400FD5012 /* ResultCell.swift */; };
+		C0B788891AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B788881AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png */; };
 		C0E0BA731AD3503D008042CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0BA721AD3503D008042CD /* AppDelegate.swift */; };
 		C0E0BA781AD3503D008042CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BA761AD3503D008042CD /* Main.storyboard */; };
 		C0E0BA7A1AD3503D008042CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BA791AD3503D008042CD /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		C0A2EA181AD4BC8F00FD5012 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		C0A2EA1C1AD4C2C400FD5012 /* ResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		C0B788881AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider_semesterPicker_vertical155.png; sourceTree = "<group>"; };
 		C0E0BA6D1AD3503D008042CD /* SMC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E0BA711AD3503D008042CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0E0BA721AD3503D008042CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		C0E0BAA21AD350F3008042CD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C0B788881AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png */,
 				C0E0BA941AD350E8008042CD /* logo_gradeDistribution.png */,
 				C0E0BA951AD350E8008042CD /* logo_SMC.png */,
 				C0E0BA961AD350E8008042CD /* ratingDot_off.png */,
@@ -233,6 +236,7 @@
 				C0E0BA781AD3503D008042CD /* Main.storyboard in Resources */,
 				C0E0BA9F1AD350E8008042CD /* ratingDot_medium.png in Resources */,
 				C0E0BA7D1AD3503D008042CD /* LaunchScreen.xib in Resources */,
+				C0B788891AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png in Resources */,
 				C0E0BA9C1AD350E8008042CD /* logo_SMC.png in Resources */,
 				C0E0BA9D1AD350E8008042CD /* ratingDot_off.png in Resources */,
 				C0E0BAA01AD350E8008042CD /* ratingDot_low.png in Resources */,
