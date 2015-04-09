@@ -14,6 +14,11 @@ class GradeDistributionViewController: UIViewController, UITextFieldDelegate, UI
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var yearPicker: UIPickerView!
     
+    @IBOutlet weak var summerSwitch: UISwitch!
+    @IBOutlet weak var fallSwitch: UISwitch!
+    @IBOutlet weak var winterSwitch: UISwitch!
+    @IBOutlet weak var springSwitch: UISwitch!
+    
     let availableYears = ["2014", "2013", "2012", "2011", "2010", "2009", "2008"]
     
     override func viewDidLoad() {
@@ -29,7 +34,6 @@ class GradeDistributionViewController: UIViewController, UITextFieldDelegate, UI
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
         textField.resignFirstResponder()
-        
         return true
     }
     
@@ -39,7 +43,7 @@ class GradeDistributionViewController: UIViewController, UITextFieldDelegate, UI
     @IBAction func searchStarted(sender: UITextField) {
         if sender.text.isEmpty {
             searchButton.enabled = false
-        } else {
+        } else if summerSwitch.on == true || fallSwitch.on == true || winterSwitch.on == true || springSwitch.on == true {
             searchButton.enabled = true
         }
     }
@@ -54,14 +58,12 @@ class GradeDistributionViewController: UIViewController, UITextFieldDelegate, UI
         return availableYears[row]
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier! == "SearchWithName"{
+            
+        }
     }
-    */
 
 }
