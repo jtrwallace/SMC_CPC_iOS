@@ -11,13 +11,16 @@ import UIKit
 class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var resultsTable: UITableView!
+    @IBOutlet weak var searchedNameLabel: UILabel!
     let tableTestData = ["Man, Super", "Cable Guy", "Beyonce", "Dog Whisperer", "Bojangles", "Chapstick", "Monopoly Man", "Turnt Up", "This is all tabel test data", "Need actual data", "Need to figure out SQL server", "Much list. Names many."]
     let textCellIdentifier = "ResultCell"
+    var searchName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         resultsTable.delegate = self
         resultsTable.dataSource = self
+        //searchedNameLabel.text = GradeDistributionViewController.
         // Do any additional setup after loading the view.
     }
 
@@ -26,6 +29,9 @@ class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource 
         // Dispose of any resources that can be recreated.
     }
     
+    func nameOfSearch(search: String){
+        searchedNameLabel.text = search
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableTestData.count
@@ -69,7 +75,7 @@ class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource 
         cell.contentView.addConstraint(constW)
         var constH = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 14)
         cell.addConstraint(constH)
-        
+    
         
         return cell
     }
