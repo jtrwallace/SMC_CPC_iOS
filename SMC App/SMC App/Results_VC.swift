@@ -8,44 +8,47 @@
 
 import UIKit
 
-class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Results_VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var resultsTable: UITableView!
     @IBOutlet weak var searchedNameLabel: UILabel!
-    let tableTestData = ["Man, Super", "Cable Guy", "Beyonce", "Dog Whisperer", "Bojangles", "Chapstick", "Monopoly Man", "Turnt Up", "This is all tabel test data", "Need actual data", "Need to figure out SQL server", "Much list. Names many."]
+    let tableTestData = ["Coral, Mark", "Stonich, Hank", "Tresle, Laura", "Kalitz, Guter", "West, Tray", "Luto, Derick", "Poster, Sara", "Feriece, Deborah", "Pascal, Joqeue", "Verta, Maria", "Rusterson, Bill", "Fenning, Michael", "Patter, Herry", "Soyo, Kim"]
     let textCellIdentifier = "ResultCell"
-    var searchName = ""
+    var searchName:String!
+    var selectedProfessor:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         resultsTable.delegate = self
         resultsTable.dataSource = self
-        //searchedNameLabel.text = GradeDistributionViewController.
-        // Do any additional setup after loading the view.
+        searchedNameLabel.text = "Grade Distribution"
     }
-
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        self.searchedNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
+        searchedNameLabel.text = searchName
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func nameOfSearch(search: String){
-        searchedNameLabel.text = search
+    @IBAction func backButton(sender: UIButton) {
+        self.dismissViewControllerAnimated(false, completion: nil)
     }
     
+    // TABLE VIEW FUNC'S
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableTestData.count
     }
-    
-    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44
     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         let row = indexPath.row
         
         cell.textLabel?.text = tableTestData[row]
@@ -75,7 +78,6 @@ class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource 
         cell.contentView.addConstraint(constW)
         var constH = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 14)
         cell.addConstraint(constH)
-    
         
         return cell
     }
@@ -83,16 +85,19 @@ class ResultsView: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let row = indexPath.row
         println(tableTestData[row])
+        selectedProfessor = tableTestData[row]
+        performSegueWithIdentifier("SelectProfessor", sender: self)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier! == "SelectProfessor"{
+            var destinationView = segue.destinationViewController as! ProfessorProfile_VC
+            destinationView.selectedProfessor = selectedProfessor
+            destinationView.focusedClass = searchName
+        }
     }
-    */
 
 }

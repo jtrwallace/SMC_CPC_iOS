@@ -12,6 +12,7 @@ class Professor: NSObject {
     
     var name: String!
     var rating: Int!
+    var otherClasses:Array<String>!
     
     init(name: String, rating: Int){
         super.init()
