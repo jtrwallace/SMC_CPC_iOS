@@ -26,6 +26,12 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var focusedClassLabel: UILabel!
     @IBOutlet weak var professorNameLabel: UILabel!
     
+    @IBOutlet weak var numberOf_A_Label: UILabel!
+    @IBOutlet weak var numberOf_B_Label: UILabel!
+    @IBOutlet weak var numberOf_C_Label: UILabel!
+    @IBOutlet weak var numberOf_D_Label: UILabel!
+    @IBOutlet weak var numberOf_F_Label: UILabel!
+    
     //Temp...
     var numberOf_F:Int!
     var numberOf_D:Int!
@@ -57,6 +63,12 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
         progressView_D.progress = Float(numberOf_D)/100
         progressView_F.progress = Float(numberOf_F)/100
         //================================================/
+        
+        numberOf_A_Label.text = String(numberOf_A)
+        numberOf_B_Label.text = String(numberOf_B)
+        numberOf_C_Label.text = String(numberOf_C)
+        numberOf_D_Label.text = String(numberOf_D)
+        numberOf_F_Label.text = String(numberOf_F)
     }
     override func viewDidAppear(animated: Bool) {
         self.professorNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
@@ -121,6 +133,12 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
         progressView_D.progress = Float(numberOf_D)/100
         progressView_F.progress = Float(numberOf_F)/100
         //================================================/
+        
+        numberOf_A_Label.text = String(numberOf_A)
+        numberOf_B_Label.text = String(numberOf_B)
+        numberOf_C_Label.text = String(numberOf_C)
+        numberOf_D_Label.text = String(numberOf_D)
+        numberOf_F_Label.text = String(numberOf_F)
     }
 
 

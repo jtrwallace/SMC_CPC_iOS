@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7B0153EB-5D0A-43A5-A518-81696876E4D5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SMC App</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</key>
 		<string>https://github.com/jtrwallace/SMC_CPC_iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SMC App/SMC App.xcodeproj/project.xcworkspace</string>
+	<string>SMC App/SMC App.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10DB1E8EBC7D5A0124D1686ADCCBBECD9364998C</key>
