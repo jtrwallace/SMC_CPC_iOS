@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C06D72F91B048BAB00D3F6D9 /* button_search_professor.png in Resources */ = {isa = PBXBuildFile; fileRef = C06D72F71B048BAB00D3F6D9 /* button_search_professor.png */; };
+		C06D72FA1B048BAB00D3F6D9 /* button_search_department.png in Resources */ = {isa = PBXBuildFile; fileRef = C06D72F81B048BAB00D3F6D9 /* button_search_department.png */; };
 		C0779B041AD8C876004CAAA8 /* prefessorPortrait_temp.png in Resources */ = {isa = PBXBuildFile; fileRef = C0779B031AD8C876004CAAA8 /* prefessorPortrait_temp.png */; };
 		C0779B061AD8C936004CAAA8 /* ProfessorProfile_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0779B051AD8C936004CAAA8 /* ProfessorProfile_VC.swift */; };
 		C090C7981AE44AD100906991 /* headerGraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = C090C7971AE44AD100906991 /* headerGraphic.png */; };
@@ -29,6 +31,12 @@
 		C0E0BAA01AD350E8008042CD /* ratingDot_low.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BA991AD350E8008042CD /* ratingDot_low.png */; };
 		C0E0BAA11AD350E8008042CD /* divider_shadowedBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E0BA9A1AD350E8008042CD /* divider_shadowedBottom.png */; };
 		C0E0BAA41AD3513E008042CD /* GDSearch_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0BAA31AD3513E008042CD /* GDSearch_VC.swift */; };
+		C0F3A42A1B044D9400A382B5 /* ProfessorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A4291B044D9400A382B5 /* ProfessorsTableViewController.swift */; };
+		C0F3A42E1B044E0B00A382B5 /* ProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A42D1B044E0B00A382B5 /* ProfessorViewController.swift */; };
+		C0F3A4301B044E2B00A382B5 /* DepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A42F1B044E2B00A382B5 /* DepartmentViewController.swift */; };
+		C0F3A4321B044E3B00A382B5 /* DepartmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A4311B044E3B00A382B5 /* DepartmentTableViewController.swift */; };
+		C0F3A4341B044E6600A382B5 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A4331B044E6600A382B5 /* CoursesTableViewController.swift */; };
+		C0F3A4361B044E8300A382B5 /* ProfessorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3A4351B044E8300A382B5 /* ProfessorProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C06D72F71B048BAB00D3F6D9 /* button_search_professor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_search_professor.png; sourceTree = "<group>"; };
+		C06D72F81B048BAB00D3F6D9 /* button_search_department.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_search_department.png; sourceTree = "<group>"; };
 		C0779B031AD8C876004CAAA8 /* prefessorPortrait_temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefessorPortrait_temp.png; sourceTree = "<group>"; };
 		C0779B051AD8C936004CAAA8 /* ProfessorProfile_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorProfile_VC.swift; sourceTree = "<group>"; };
 		C090C7971AE44AD100906991 /* headerGraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerGraphic.png; sourceTree = "<group>"; };
@@ -68,6 +78,12 @@
 		C0E0BA991AD350E8008042CD /* ratingDot_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ratingDot_low.png; sourceTree = "<group>"; };
 		C0E0BA9A1AD350E8008042CD /* divider_shadowedBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider_shadowedBottom.png; sourceTree = "<group>"; };
 		C0E0BAA31AD3513E008042CD /* GDSearch_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDSearch_VC.swift; sourceTree = "<group>"; };
+		C0F3A4291B044D9400A382B5 /* ProfessorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorsTableViewController.swift; sourceTree = "<group>"; };
+		C0F3A42D1B044E0B00A382B5 /* ProfessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfessorViewController.swift; path = ../ProfessorViewController.swift; sourceTree = "<group>"; };
+		C0F3A42F1B044E2B00A382B5 /* DepartmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentViewController.swift; sourceTree = "<group>"; };
+		C0F3A4311B044E3B00A382B5 /* DepartmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentTableViewController.swift; sourceTree = "<group>"; };
+		C0F3A4331B044E6600A382B5 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		C0F3A4351B044E8300A382B5 /* ProfessorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				C0E0BA721AD3503D008042CD /* AppDelegate.swift */,
+				C0F3A4281B04476C00A382B5 /* Department Search */,
+				C0F3A4271B04475700A382B5 /* Professor Search */,
 				C0E0BAA31AD3513E008042CD /* GDSearch_VC.swift */,
 				C0A2EA181AD4BC8F00FD5012 /* Results_VC.swift */,
 				C0779B051AD8C936004CAAA8 /* ProfessorProfile_VC.swift */,
@@ -153,6 +171,8 @@
 		C0E0BAA21AD350F3008042CD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C06D72F71B048BAB00D3F6D9 /* button_search_professor.png */,
+				C06D72F81B048BAB00D3F6D9 /* button_search_department.png */,
 				C0779B031AD8C876004CAAA8 /* prefessorPortrait_temp.png */,
 				C0CC8AC41AE34A1A00C37B7F /* prefessorPortrait.png */,
 				C0B788881AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png */,
@@ -166,6 +186,26 @@
 				C0E0BA9A1AD350E8008042CD /* divider_shadowedBottom.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C0F3A4271B04475700A382B5 /* Professor Search */ = {
+			isa = PBXGroup;
+			children = (
+				C0F3A4291B044D9400A382B5 /* ProfessorsTableViewController.swift */,
+				C0F3A42D1B044E0B00A382B5 /* ProfessorViewController.swift */,
+				C0F3A4351B044E8300A382B5 /* ProfessorProfileViewController.swift */,
+			);
+			name = "Professor Search";
+			sourceTree = "<group>";
+		};
+		C0F3A4281B04476C00A382B5 /* Department Search */ = {
+			isa = PBXGroup;
+			children = (
+				C0F3A42F1B044E2B00A382B5 /* DepartmentViewController.swift */,
+				C0F3A4311B044E3B00A382B5 /* DepartmentTableViewController.swift */,
+				C0F3A4331B044E6600A382B5 /* CoursesTableViewController.swift */,
+			);
+			name = "Department Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +292,12 @@
 				C0779B041AD8C876004CAAA8 /* prefessorPortrait_temp.png in Resources */,
 				C0E0BA9E1AD350E8008042CD /* ratingDot_high.png in Resources */,
 				C0E0BAA11AD350E8008042CD /* divider_shadowedBottom.png in Resources */,
+				C06D72FA1B048BAB00D3F6D9 /* button_search_department.png in Resources */,
 				C0E0BA781AD3503D008042CD /* Main.storyboard in Resources */,
 				C0CC8AC51AE34A1A00C37B7F /* prefessorPortrait.png in Resources */,
 				C0E0BA9F1AD350E8008042CD /* ratingDot_medium.png in Resources */,
 				C0E0BA7D1AD3503D008042CD /* LaunchScreen.xib in Resources */,
+				C06D72F91B048BAB00D3F6D9 /* button_search_professor.png in Resources */,
 				C0B788891AD5B8D70020AC5C /* divider_semesterPicker_vertical155.png in Resources */,
 				C0E0BA9C1AD350E8008042CD /* logo_SMC.png in Resources */,
 				C0E0BA9D1AD350E8008042CD /* ratingDot_off.png in Resources */,
@@ -280,13 +322,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F3A4301B044E2B00A382B5 /* DepartmentViewController.swift in Sources */,
 				C0E0BAA41AD3513E008042CD /* GDSearch_VC.swift in Sources */,
+				C0F3A42E1B044E0B00A382B5 /* ProfessorViewController.swift in Sources */,
 				C0C099251AE4B53C00C6C147 /* UIViewExtensions.swift in Sources */,
+				C0F3A4341B044E6600A382B5 /* CoursesTableViewController.swift in Sources */,
 				C0A2EA191AD4BC8F00FD5012 /* Results_VC.swift in Sources */,
+				C0F3A42A1B044D9400A382B5 /* ProfessorsTableViewController.swift in Sources */,
 				C0CE992E1AD5EB07002FCA6B /* Professor.swift in Sources */,
 				C0A2EA1D1AD4C2C400FD5012 /* ResultCell.swift in Sources */,
 				C0779B061AD8C936004CAAA8 /* ProfessorProfile_VC.swift in Sources */,
+				C0F3A4361B044E8300A382B5 /* ProfessorProfileViewController.swift in Sources */,
 				C0E0BA731AD3503D008042CD /* AppDelegate.swift in Sources */,
+				C0F3A4321B044E3B00A382B5 /* DepartmentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

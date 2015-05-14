@@ -68,7 +68,7 @@ class GDSearch_VC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier! == "SearchWithName"{
+        if segue.identifier! == "ResultsTable"{
             var destinationView = segue.destinationViewController as! Results_VC
             destinationView.searchName = searchField.text
         }

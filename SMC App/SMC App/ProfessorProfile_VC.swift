@@ -24,7 +24,6 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var otherClassesTable: UITableView!
     @IBOutlet weak var focusedClassLabel: UILabel!
-    @IBOutlet weak var professorNameLabel: UILabel!
     
     @IBOutlet weak var numberOf_A_Label: UILabel!
     @IBOutlet weak var numberOf_B_Label: UILabel!
@@ -43,7 +42,7 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         otherClassesTable.delegate = self
         otherClassesTable.dataSource = self
-        professorNameLabel.text = focusedClass
+        //professorNameLabel.text = focusedClass
         focusedClassLabel.text = focusedClass
         
         //TEMP RANDOM GRADE DISTRIBUTION DATA GENERATION:=\
@@ -71,16 +70,12 @@ class ProfessorProfile_VC: UIViewController, UITableViewDelegate, UITableViewDat
         numberOf_F_Label.text = String(numberOf_F)
     }
     override func viewDidAppear(animated: Bool) {
-        self.professorNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
-        professorNameLabel.text = firstLastNameConversion(selectedProfessor)//selectedProfessor
+        //self.professorNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
+        //professorNameLabel.text = firstLastNameConversion(selectedProfessor)//selectedProfessor
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func backButton(sender: UIButton) {
-        self.dismissViewControllerAnimated(false, completion: nil)
     }
     
     func firstLastNameConversion(lastFirstNameString: String) -> String {

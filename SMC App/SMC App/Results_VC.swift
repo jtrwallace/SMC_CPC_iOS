@@ -11,7 +11,6 @@ import UIKit
 class Results_VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var resultsTable: UITableView!
-    @IBOutlet weak var searchedNameLabel: UILabel!
     let tableTestData = ["Coral, Mark", "Stonich, Hank", "Tresle, Laura", "Kalitz, Guter", "West, Tray", "Luto, Derick", "Poster, Sara", "Feriece, Deborah", "Pascal, Joqeue", "Verta, Maria", "Rusterson, Bill", "Fenning, Michael", "Patter, Herry", "Soyo, Kim"]
     let textCellIdentifier = "ResultCell"
     var searchName:String!
@@ -21,12 +20,12 @@ class Results_VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         resultsTable.delegate = self
         resultsTable.dataSource = self
-        searchedNameLabel.text = "Grade Distribution"
+        //searchedNameLabel.text = "Grade Distribution"
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        self.searchedNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
-        searchedNameLabel.text = searchName
+        //self.searchedNameLabel.slideFromLeft(duration: 0.5, completionDelegate: nil)
+        //searchedNameLabel.text = searchName
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -86,14 +85,14 @@ class Results_VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         println(tableTestData[row])
         selectedProfessor = tableTestData[row]
-        performSegueWithIdentifier("SelectProfessor", sender: self)
+        performSegueWithIdentifier("NextView", sender: self)
     }
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier! == "SelectProfessor"{
+        if segue.identifier! == "ProfessorProfile"{
             var destinationView = segue.destinationViewController as! ProfessorProfile_VC
             destinationView.selectedProfessor = selectedProfessor
             destinationView.focusedClass = searchName
