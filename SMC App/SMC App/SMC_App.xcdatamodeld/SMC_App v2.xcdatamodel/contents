@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Course" representedClassName="SMC_App.Course" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="semester" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Department" inverseName="courses" inverseEntity="Department" syncable="YES"/>
+        <relationship name="grade_distribution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GradeDistribution" inverseName="course" inverseEntity="GradeDistribution" syncable="YES"/>
+        <relationship name="professor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="courses" inverseEntity="Professor" syncable="YES"/>
+    </entity>
+    <entity name="Department" representedClassName="SMC_App.Department" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="department" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <entity name="GradeDistribution" representedClassName="SMC_App.GradeDistribution" syncable="YES">
+        <attribute name="a" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="b" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="c" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="d" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="f" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="total" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="w" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="grade_distribution" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <entity name="Personality" representedClassName="SMC_App.Personality" parentEntity="Professor" syncable="YES">
+        <attribute name="clarity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="helpfulness" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hygiene" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="punctuality" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="professor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="personality" inverseEntity="Professor" syncable="YES"/>
+    </entity>
+    <entity name="Professor" representedClassName="SMC_App.Professor" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="professor" inverseEntity="Course" syncable="YES"/>
+        <relationship name="personality" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Personality" inverseName="professor" inverseEntity="Personality" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="-65" positionY="20" width="128" height="163"/>
+        <element name="Department" positionX="-63" positionY="-100" width="128" height="73"/>
+        <element name="GradeDistribution" positionX="133" positionY="-36" width="128" height="163"/>
+        <element name="Personality" positionX="133" positionY="206" width="128" height="118"/>
+        <element name="Professor" positionX="-74" positionY="216" width="128" height="103"/>
+    </elements>
+</model>

@@ -1,0 +1,10 @@
+• Add swipe functionality to return to previous view in stack.
+• Add pull out drawer for menu options.
+• Fix search field keyboard bug.
+• Implement professor profile.
+• Keyboard hides on “Done” press.
+• Change keyboard “Search” to “Done.
+• Make table view data alphabetical and react to Alphabetical/TopRating settings.
+• Whittle down table view data as person types in search field.
+• After alphabetical list done, add vertical letters on side of table view for quick selection.
+• 

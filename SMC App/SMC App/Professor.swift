@@ -1,23 +1,26 @@
 //
 //  Professor.swift
-//  SMC App
+//  
 //
-//  Created by Harrison Balogh on 4/8/15.
-//  Copyright (c) 2015 CPC iOS. All rights reserved.
+//  Created by Harrison Balogh on 5/26/15.
+//
 //
 
-import UIKit
+import Foundation
+import CoreData
 
-class Professor: NSObject {
+class Professor: NSManagedObject {
+
+    @NSManaged var name: String
+    @NSManaged var id: NSNumber
+    @NSManaged var courses: NSSet
+    @NSManaged var personality: Personality
     
-    var name: String!
-    var rating: Int!
-    var otherClasses:Array<String>!
-    
-    init(name: String, rating: Int){
-        super.init()
+    class func professorInManagedObjectContext(moc: NSManagedObjectContext, name: String) -> Professor {
+        let newItem = NSEntityDescription.insertNewObjectForEntityForName("Professor", inManagedObjectContext: moc) as! Professor
+        newItem.name = name
         
-        self.name = name
-        self.rating = rating
+        return newItem
     }
+
 }
