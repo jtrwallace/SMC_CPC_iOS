@@ -32,8 +32,6 @@ class DepartmentTableViewController: UITableViewController, UISearchBarDelegate{
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.hidesBarsOnSwipe = true
-        navigationController?.hidesBarsWhenKeyboardAppears = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,7 +82,6 @@ class DepartmentTableViewController: UITableViewController, UISearchBarDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("PrototypeCell", forIndexPath: indexPath) as! UITableViewCell
         let row = indexPath.row
         cell.textLabel?.text = departmentSearchResults[indexPath.row].valueForKey("title") as? String
-        cell.textLabel?.textColor = UIColor.whiteColor()
         
         return cell
     }

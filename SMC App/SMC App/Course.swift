@@ -18,7 +18,7 @@ class Course: NSManagedObject {
     @NSManaged var section: NSNumber
     @NSManaged var department: Department
     @NSManaged var professor: Professor
-    @NSManaged var grade_distribution: NSManagedObject
+    @NSManaged var grade_distribution: GradeDistribution
 
     class func courseInManagedObjectContext(moc: NSManagedObjectContext, title: String, department: Department, professor: Professor) -> Course {
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("Course", inManagedObjectContext: moc) as! Course

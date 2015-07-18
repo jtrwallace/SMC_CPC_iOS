@@ -40,8 +40,6 @@ class CoursesTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.hidesBarsOnSwipe = true
-        navigationController?.hidesBarsWhenKeyboardAppears = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,7 +88,6 @@ class CoursesTableViewController: UITableViewController, UISearchBarDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("PrototypeCell", forIndexPath: indexPath) as! UITableViewCell
         let row = indexPath.row
         cell.textLabel?.text = courseSearchResults[row].title
-        cell.textLabel?.textColor = UIColor.whiteColor()
         
         return cell
     }

@@ -1,27 +1,17 @@
 Art
 Business
-Accounting
 Communication and Media Studies
-Communication Studies
-Film Studies
-Journalism
-Media Studies
 Computer Science and Information Systems
 Cosmetology
 Counseling
 Dance
 Design Technology
-Entertainment Technology
-Graphic Design
-Interior Architectural Design
 Earth Science
 Education/ECE
 ESL
 English
 Fashion Design and Merchandising
 Health Sciences
-Nursing
-Respiratory Therapy
 History
 Kinesiology and Athletics
 Library
@@ -31,15 +21,7 @@ Modern Languages
 Music
 Photography
 Physical Sciences
-Chemistry
-Engineering
-Physics
 Psychology
 Philosophy and Social Sciences
-Economics
-Philosophy
-Political Science
-Sociology
-Women’s Studies
-Public Policy
 Theatre Arts
+{Necessary Last Line}
